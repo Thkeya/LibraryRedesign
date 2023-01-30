@@ -1,0 +1,965 @@
+/* <---Styling for Main Page---> */
+
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+    
+}
+
+
+body,
+html {
+    
+    
+    background: #D9D9D9;
+    font-family: 'Asap', sans-serif;
+    
+}
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+.navarea a{
+    color: white;
+    
+}
+
+.navarea a, a::before{
+    -o-transition: 0.27s;
+    -ms-transition: 0.27s;
+    -moz-transition: 0.27s;
+    -webkit-transition: 0.27s;
+    transition: 0.27s;
+    
+}
+
+ .active, .nav-item:hover{
+    color: blue;
+}
+
+.top-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+   
+}
+
+.top-navigation-links {
+    display: flex;
+    gap: 10em;
+    margin-top: 10px;
+    font-size: 16px;
+    
+    
+}
+
+.top-navigation-links a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    gap: 10em;
+    
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+}
+
+.search-field {
+    width: 150%;
+    padding: 12px;
+    border: 3px solid black;
+    outline: none;
+    margin-bottom: 5px;
+   margin-top: 5px;
+
+}
+
+.search-button {
+background: transparent;
+border: none;
+outline: none;
+margin-left: -33px;
+}
+
+.search-field i {
+  margin-left: 300px;
+    height: 20px;
+    object-fit: cover;
+  
+}
+
+.center-home img {
+    width: 100%;
+}
+.home-text h1{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    font-size: 32px;
+    color: black;
+    font-size: 32px;
+}
+
+.home-text p{
+    font-size: 20px;
+    text-align: center;
+  margin-bottom: 80px;
+  word-wrap: normal;
+  line-height: 24px;
+    
+    }
+
+.bottom-home img {
+    max-width: 400px;
+    float: right;
+    border: 3px;
+    border-radius: 10px;
+    margin-left: 70px;
+    top: -950px;
+    
+    
+}
+.bottom-home button {
+    border: none;
+    background-color: black;
+    color: white;
+    width: 200px;
+    padding: 1em;
+    border-radius: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    max-width: 300px;
+    margin: auto;
+    font-size: 16px;
+    margin-bottom: 50px;
+    
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  a:hover {
+    color: #808080;
+    transition: 0.5s;
+  }
+  
+  .footer-copy {
+   margin: 0 auto;
+   width: 800px;
+   text-align: center;
+  }
+  
+  .footer-copyright {
+    list-style: none;
+    line-height: 50px;
+    vertical-align: top;
+    text-decoration: none;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 400;
+  }
+  
+  .footer-copyright li {
+    position: relative;
+    
+  }
+  
+  .footer-copyright li {
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+    z-index: 1;
+  }
+  
+  .footer-copyright li:before {
+    content: "";
+    height: 20px;
+    width: 1px;
+    background-color: rgb(0 0 0 / 20%);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 16px;
+  }
+  
+  .footer-copyright li:last-child:before {
+    content: unset;
+  }
+
+/* <---Styling for About Us---> */
+.text-box h1{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+.wrapper {
+    margin: 150px auto;
+    width: 70%;
+    
+}
+
+.text-box p{
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 48px;
+
+}
+
+.wrapper img {
+    max-width: 500px;
+    float: right;
+    border: 3px;
+    border-radius: 10px;
+   margin-left: 250px;
+   width: 541px;
+   height: 828px;
+    left: 897px;
+    top: 300px;
+   
+    
+}
+
+
+/* <---Styling for Registration---> */
+
+.container-reg{
+    background: white;
+   
+}
+
+.title-sub{
+    font-size: 16px;
+    margin-left: 175px;
+    top: -900px;
+    margin-bottom: 20px;
+}
+
+input, textarea{
+    outline: none;
+    border: none;
+}
+
+.container-signup{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.wrap-signup{
+    
+    background: #fff;
+    border-radius: 2px;
+   
+    padding: 72px 50px 0px 50px;
+}
+
+.signup-form {
+    max-width: 520px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 10%;
+    
+    
+}
+
+
+.signup-form-title {
+    display: block;
+    width: 100%;
+    font-size: 32px;
+    font-weight: 900;
+    color: #333333;
+    line-height: 1.2;
+    text-align: left;
+    padding-bottom: 50px;
+    font-weight: bold;
+    margin-left: 65px;
+}
+
+.wrap-input{
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid #dbdbdb;
+    margin-bottom: 60px;
+    top: 25px;
+}
+
+.label-input{
+    font-size: 16px;
+    font-weight: 600;
+    color: #999999;
+    line-height: 1.2;
+    padding-left: 2px;
+}
+
+.input{
+    display: block;
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.2;
+    padding: 0 2px;
+}
+
+.focus-input{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.focus-input::before{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0px;
+    width: 0;
+    height: 2px;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    background: blue;
+}
+
+.input:focus+ .focus-input::before{
+    width: 100%;
+}
+
+.signup-more{
+    /*width: calc(100% - 520px);*/
+   
+    background-image: url(../Assets/RedMugIpadImage.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+ .container-terms{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 35px;
+    margin-bottom: 12px;
+ }
+
+ .input-checkbox{
+    display: none;
+    }
+
+.label-checkbox{
+    margin: 0;
+    display: block;
+    position: relative;
+    padding-left: 26px;
+    cursor: pointer;
+}
+.label-checkbox::before{
+    content: "\f00c";
+    font-family: FontAwesome;
+    font-size: 13px;
+    color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    background: #e6e6e6;
+    transform: translateY(-50%);
+    -webkit-transform:translateY(-50%);
+
+}
+
+.input-checkbox:checked + .label-checkbox::before{
+    color: blue;
+}
+.txt1, .txt2{
+    font-size: 14px;
+    color: #999;
+    line-height: 1.4;
+}
+.txt2{
+    color:blue;
+}
+
+.hov1:hover{
+    color: #666;
+}
+
+.container-signup-form-btn{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrap-signup-form-btn{
+    display: block;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.signup-form-btn{
+    width: 245px;
+    height: 50px;
+    padding: 10px 30px;
+    background: black;
+    border-radius: 25px;
+    font-size: 20px;
+    color: white;
+    
+    
+}
+button{
+    outline: none !important;
+    border: none;
+    background: transparent;
+}
+button:hover{
+    cursor: pointer;
+}
+.a, a:hover{
+    text-decoration: none;
+}
+
+.login-button{
+    font-size: 18px;
+    color: #666;
+    text-decoration: none;
+}
+.textarea:focus, input:focus{
+    border-color: transparent !important;
+}
+
+input:focus::-webkit-input-placeholder{color: transparent;}
+input:focus::-moz-placeholder{color: transparent;}
+input:focus::-moz-placeholder{color:transparent;}
+input:focus:-ms-input-placeholder{color:transparent;}
+
+input::-webkit-input-placeholder{color: #ccc;}
+
+textarea::-webkit-input-placeholder{color:#ccc;}
+
+
+/* <---Styling for My Account---> */
+.container-account{
+    background: #F5F5F5;
+}
+
+
+
+.account-text-1 h1{
+    color: blue;
+    font-size: 32px;
+    font-weight: 900;
+    font-style: normal;
+    line-height: 64px;
+    margin-left: 152px;
+    
+}
+
+.account-text-2{
+    color: blue;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    margin-left: 152px;
+    margin-bottom: 30px;
+}
+
+
+.account-grid{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 10%;
+}
+
+.card-content{
+   
+    text-align: center;
+    justify-content: center;
+    
+    
+    
+}
+.card-content-b h4{
+    margin-top: -40px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-left: 50px;
+
+}
+.card-content-b p{
+    font-size: 32px;
+    color: blue;
+    margin-left: 50px;
+    margin-bottom: 12px;
+  
+}
+
+.card-content-a h4{
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: -40px;
+    margin-bottom: 15px;
+}
+
+.card-content-a p{
+    font-size: 32px;
+    color: blue;
+    margin-left:50px;
+    margin-bottom: 12px;
+    
+}
+
+.card-content-m h4{
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: -40px;
+    margin-bottom: 15px;
+}
+
+.card-content-m p{
+    font-size: 32px;
+    color: blue;
+    margin-left:50px ;
+    margin-bottom: 12px;
+}
+.card-content-f h4{
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: -40px;
+    margin-bottom: 15px;
+}
+
+.card-content-f p{
+    font-size: 32px;
+    color: blue;
+    margin-left:50px ;
+    margin-bottom: 12px;
+}
+
+.card-content-pc h4{
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: -40px;
+    margin-bottom: 15px;
+}
+
+.card-content-pc p{
+    font-size: 32px;
+    color: blue;
+    margin-left:50px ;
+    margin-bottom: 12px;
+}
+
+.card-content-pr h4{
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: -40px;
+    margin-bottom: 30px;
+}
+
+.card-content-pr p{
+    font-size: 18px;
+    margin-left: 80px;
+    margin-bottom: 12px;
+   overflow-wrap: normal;
+  margin-right: 20px;
+   
+}
+.card{
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 288px;
+    
+}
+
+.card img{
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+/* <---Styling for Ebooks---> */
+.container-ebooks{
+    background: white;
+}
+
+.banner-card img{
+    width: 100%;
+}
+.banner-card{
+    position: relative;
+}
+.banner-text{
+position: absolute;
+top: 85px;
+color: white;
+padding: 10px;
+text-align: justify;
+font-size: 30px;
+justify-content: center;
+font-weight: bold;
+word-wrap: normal;
+width: 30vw;
+left: 107px;
+}
+
+.banner-text p{
+    font-size: 32px;
+}
+
+.icons{
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 12px;
+    background: #020202;
+   
+    
+}
+
+.icons-img{
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-right: 60px;
+   
+    
+}
+.icons-text{
+   font-weight: bold;
+   color:blue;
+   margin-top: 12px;
+   font-size: 32px;
+   margin-left: 50px;
+   margin-right: 20px;
+   margin-bottom: 15px;
+}
+.wrapper-nav{
+    position: relative;
+   margin: 0 auto;
+    padding: 50px 0;
+    clear: both;
+    
+}
+.menu-area{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 250px;
+    
+    
+}
+.menu-area li {
+    position: relative;
+
+}
+.menu-area li a {
+    text-align: center;
+    height: 36px;
+    position: relative;
+    border-bottom: 1px solid black;
+    display: block;
+    text-decoration: none;
+    padding: 12px 20px;
+    color: black;
+}
+.menu-area li a strong{
+    display: block;
+    text-transform: uppercase;
+    font-size: 20px;
+    
+}
+.menu-area li:hover > a{
+    color: blue;
+}
+
+.menu-area li ul,
+.menu-area li ul li ul{
+    background: lightgray;
+    opacity: 0;
+    visibility: hidden;
+    transition: 300ms;
+    z-index: 999;
+    left: 280px;
+    list-style: none;
+    position: absolute;
+    height: auto;
+    min-width: 250px;
+    padding: 0;
+    margin: 0;
+    top: 0;
+}
+.menu-area li:hover > ul, .menu-area li ul li:hover > ul{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    left: 250px;
+}
+.menu-area li ul li a{
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    border: 2px;
+    border-bottom: 1px solid black;
+    height: auto;
+}
+.menu-area li ul li ul{
+    left: 230px;
+    border: 0;
+  top: 0;
+}
+
+.wrapper-books{
+display: block;
+margin-left:40%;
+margin-right: 60%;
+width: 50%;
+margin-top: -100px;
+margin-bottom: 10%;
+
+}
+.wrapper-books-img{
+    margin-bottom: 20px;
+}
+
+.wrapper-books-text button{
+    border: none;
+    background-color: blue;
+    color: white;
+    width: 100px;
+    padding: 1em;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 12px;
+    
+}
+
+.wrapper-books-text p{
+    word-wrap: normal;
+    width: 30vw;
+    margin-bottom: 12px;
+    font-size: 20px;
+   
+}
+.wrapper-books-text{
+  float: right;
+ margin-top: 10px;
+}
+
+.page-numbers{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+
+}
+
+
+.container-book{
+    display: flex;
+    gap: 45px;
+}
+.icons-margin-b{
+margin-left: 10px;
+}
+
+.icons-margin-a{
+margin-left: 100px;
+}
+
+.icons-margin-m{
+    margin-left: 60px;
+}
+
+.icons-margin-p{
+    margin-left: 75px;
+}
+
+/* <---Styling for E-books Reviews---> */
+.wrapper-reviews-book{
+display: block;
+margin-left: 38%;
+margin-right: 38%;
+width: 50%;
+margin-bottom: 70%;
+top: -700px;
+}
+
+ .wrapper-reviews-book  button {
+    border: none;
+    color: white;
+    width: 200px;
+    padding: 1em;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 12px;
+
+    
+}
+
+.wrapper-reviews-book h1{
+font-size: 48px;
+margin-bottom: 15px;
+color: blue;
+}
+.wrapper-reviews-book h2{
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.wrapper-reviews-book .button-1 button{
+    background: #036DE9;
+    border: 1px solid #036DE9;
+    margin-bottom: 5px;
+    
+}
+
+.wrapper-reviews-book .button-2 button{
+    background: #3A3838;
+    border: 1px solid #000000;
+   
+}
+.wrapper-reviews-text p{
+    word-wrap: normal;
+    width: 30vw;
+    margin-bottom: 50px;
+    font-size: 24px;
+    
+    
+   
+}
+.wrapper-reviews-text{
+    width: 100%;
+  border-bottom:1px solid black ;
+}
+
+.stars {
+    color: #C2C609;
+    margin-bottom: 20px;
+    font-size: 2em;
+    margin-top: 12px;
+    margin-bottom: 30px;
+    
+}
+
+.reviews-text p{
+    word-wrap: normal;
+    width: 30vw;
+}
+
+
+.reviews-text{
+    display: block;
+    max-width: 300px;
+    margin: auto;
+}
+.stars-text{
+    display: block;
+    max-width: 300px;
+    margin: auto;
+    color: #C2C609;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+.container-reviews{
+  float: right;
+    margin-top: -400px;
+}
+
+.ratings h3 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: blue;
+    
+}
+
+
+
+
+.review-b{
+ margin-top: -95px;
+ margin-bottom: 50px;
+ margin-left: 50px;
+  
+}
+
+.review-img{
+    margin-top: 15px;
+}
+.stars-text{
+    margin-top: -25px;
+}
+
+.review-k{
+    margin-top: -95px;
+    margin-left: 50px;
+}
+
+
+.wrapper-reviews-book h2{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.wrapper-review h4{
+    margin-bottom: 40px;
+    font-size: 24px;
+}
+
+.container-ebooks-reviews{
+    background: white;
+}
+
+.wrapper-books-text h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: blue;
+}
+.wrapper-books-text h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.reviews-text p{
+    font-size: 24px;
+}
