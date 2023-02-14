@@ -9,7 +9,9 @@
     
     
 }
-
+.container{
+    max-width: 100%;
+}
 
 body,
 html {
@@ -39,8 +41,19 @@ picture {
     
 }
 
- .active, .nav-item:hover{
-    color: blue;
+    .active, .nav-item:hover{
+        color: blue;
+    }
+
+.top-navigation-left{
+    display: none;
+}
+
+@media only screen and (min-width: 768px){
+.top-navigation-left{
+    display: flex;
+    padding: 1em;
+}
 }
 
 .top-navigation {
@@ -48,14 +61,16 @@ picture {
     align-items: center;
     justify-content: space-between;
     background-color: black;
-   
 }
+
+
 
 .top-navigation-links {
     display: flex;
-    gap: 10em;
+    gap: 1em;
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 13px;
+    padding: 1em;
     
     
 }
@@ -64,41 +79,50 @@ picture {
     text-decoration: none;
     color: white;
     display: flex;
-    gap: 10em;
+    gap: 3em;
     
 }
 
-.form {
+.top-navigation-center{
+    display: none;
+}
+
+@media only screen and (min-width: 768px){
+    .form {
+        display: flex;
+        flex-direction: row;
+       
+      
+    }
+    .search-field {
+        max-width: 350%;
+        padding: 12px;
+        border: 3px solid black;
+        outline: none;
+        margin-bottom: 5px;
+       margin-top: 5px;
+       
+    }
+    .search-button {
+        background: transparent;
+        border: none;
+        outline: none;
+        margin-left: -20px;
+        }
+ 
+.top-navigation-center{
     display: flex;
-    flex-direction: row;
+}
 }
 
-.search-field {
-    width: 150%;
-    padding: 12px;
-    border: 3px solid black;
-    outline: none;
-    margin-bottom: 5px;
-   margin-top: 5px;
-
-}
-
-.search-button {
-background: transparent;
-border: none;
-outline: none;
-margin-left: -33px;
-}
-
-.search-field i {
-  margin-left: 300px;
-    height: 20px;
-    object-fit: cover;
-  
+.top-navigation-right{
+    display: flex;
+    padding: 1em;
+    min-height: 30px;
 }
 
 .center-home img {
-    width: 100%;
+    max-width: 100%;
 }
 .home-text h1{
     text-align: center;
@@ -112,10 +136,10 @@ margin-left: -33px;
 .home-text p{
     font-size: 20px;
     text-align: center;
-  margin-bottom: 80px;
-  word-wrap: normal;
-  line-height: 24px;
-    
+    margin-bottom: 80px;
+    word-wrap: normal;
+    line-height: 24px;
+    padding: 2em;
     }
 
 .bottom-home img {
@@ -123,8 +147,9 @@ margin-left: -33px;
     float: right;
     border: 3px;
     border-radius: 10px;
-    margin-left: 70px;
+    margin-left: 20px;
     top: -950px;
+    padding: 3em;
     
     
 }
@@ -132,7 +157,6 @@ margin-left: -33px;
     border: none;
     background-color: black;
     color: white;
-    width: 200px;
     padding: 1em;
     border-radius: 15px;
     font-weight: bold;
@@ -143,7 +167,6 @@ margin-left: -33px;
     font-size: 16px;
     margin-bottom: 50px;
     
-    
 }
 
 a {
@@ -151,14 +174,16 @@ a {
     color: black;
   }
   
-  a:hover {
-    color: #808080;
-    transition: 0.5s;
-  }
+ 
+    a:hover {
+        color:#808080;
+        transition: 0.5s;
+      }
+
   
   .footer-copy {
    margin: 0 auto;
-   width: 800px;
+   max-width: 800px;
    text-align: center;
   }
   
@@ -170,6 +195,7 @@ a {
     font-family: 'Inter';
     font-size: 18px;
     font-weight: 400;
+   
   }
   
   .footer-copyright li {
@@ -186,8 +212,8 @@ a {
   
   .footer-copyright li:before {
     content: "";
-    height: 20px;
-    width: 1px;
+    max-height: 20px;
+    max-width: 1px;
     background-color: rgb(0 0 0 / 20%);
     display: block;
     position: absolute;
@@ -202,37 +228,43 @@ a {
 /* <---Styling for About Us---> */
 .text-box h1{
     text-align: center;
-    margin-top: 40px;
+    margin-top: 80px;
     margin-bottom: 40px;
     font-size: 36px;
+    max-width: 300px;
+   
 }
 
 .wrapper {
     margin: 150px auto;
-    width: 70%;
+    max-width: 70%;
+    margin-bottom: 40%;
+    margin-top: 2px;
+   
     
 }
 
 .text-box p{
-font-size: 24px;
+font-size: 25px;
 font-style: normal;
-font-weight: 700;
 line-height: 48px;
+word-wrap: break-word;
+max-width: 300px;
+
+
 
 }
 
 .wrapper img {
-    max-width: 500px;
     float: right;
-    border: 3px;
-    border-radius: 10px;
+    border: 10px;
+    border-radius: 15px;
    margin-left: 250px;
-   width: 541px;
-   height: 828px;
-    left: 897px;
-    top: 300px;
+   max-height: 828px;
+   margin-bottom: 20%;
    
-    
+
+   
 }
 
 
@@ -240,7 +272,8 @@ line-height: 48px;
 
 .container-reg{
     background: white;
-   
+    
+    
 }
 
 .title-sub{
@@ -256,35 +289,31 @@ input, textarea{
 }
 
 .container-signup{
-    width: 100%;
+    max-width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 300px;
 }
 
 .wrap-signup{
-    
     background: #fff;
     border-radius: 2px;
-   
     padding: 72px 50px 0px 50px;
 }
 
 .signup-form {
     max-width: 520px;
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: auto;
     margin-bottom: 10%;
-    
-    
 }
 
 
 .signup-form-title {
     display: block;
-    width: 100%;
+    max-width: 100%;
     font-size: 32px;
     font-weight: 900;
     color: #333333;
@@ -296,7 +325,7 @@ input, textarea{
 }
 
 .wrap-input{
-    width: 100%;
+    min-width: 100%;
     position: relative;
     border-bottom: 2px solid #dbdbdb;
     margin-bottom: 60px;
@@ -313,8 +342,8 @@ input, textarea{
 
 .input{
     display: block;
-    width: 100%;
-    height: 50px;
+    max-width: 100%;
+    min-height: 50px;
     background: transparent;
     font-size: 16px;
     color: #555;
@@ -325,8 +354,8 @@ input, textarea{
 .focus-input{
     position: absolute;
     display: block;
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     top: 0;
     left: 0;
     pointer-events: none;
@@ -338,8 +367,8 @@ input, textarea{
     position: absolute;
     bottom: -2px;
     left: 0px;
-    width: 0;
-    height: 2px;
+    max-width: 0;
+    max-height: 2px;
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
     -moz-transition: all 0.4s;
@@ -348,20 +377,30 @@ input, textarea{
 }
 
 .input:focus+ .focus-input::before{
-    width: 100%;
+    max-width: 100%;
+}
+.signup-more{
+    display: none;
 }
 
-.signup-more{
-    /*width: calc(100% - 520px);*/
-   
-    background-image: url(../Assets/RedMugIpadImage.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+@media only screen and (min-width: 768px){
+    .signup-more{
+        /*width: calc(100% - 520px);*/
+       
+        background-image: url(../Assets/RedMugIpadImage.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+       
+    }
+    .signup-more{
+        display: flex;
+    }
 }
+
 
  .container-terms{
-    width: 100%;
+    max-width: 100%;
     display: flex;
     align-items: center;
     padding-bottom: 35px;
@@ -390,8 +429,8 @@ input, textarea{
     position: absolute;
     left: 0px;
     top: 50%;
-    width: 16px;
-    height: 16px;
+    max-width: 16px;
+    max-height: 16px;
     border-radius: 2px;
     background: #e6e6e6;
     transform: translateY(-50%);
@@ -411,46 +450,62 @@ input, textarea{
     color:blue;
 }
 
-.hov1:hover{
-    color: #666;
-}
+
+    .hov1:hover{
+        color: #666;
+    }
+
 
 .container-signup-form-btn{
-    width: 100%;
+    min-width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    
+    
 }
 
 .wrap-signup-form-btn{
     display: block;
     position: relative;
     padding-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .signup-form-btn{
-    width: 245px;
-    height: 50px;
+    max-width: 245px;
+    max-height: 50px;
     padding: 10px 30px;
     background: black;
     border-radius: 25px;
     font-size: 20px;
     color: white;
+    margin-bottom: 30px;
     
-    
+}
+
+.login-button-hov1{
+margin-top: -60px;
 }
 button{
     outline: none !important;
     border: none;
     background: transparent;
 }
-button:hover{
-    cursor: pointer;
-}
-.a, a:hover{
-    text-decoration: none;
-}
+
+
+
+    button:hover{
+        cursor: pointer;
+    }
+
+
+
+    .a, a:hover{
+        text-decoration: none;
+    }
+
 
 .login-button{
     font-size: 18px;
@@ -474,6 +529,7 @@ textarea::-webkit-input-placeholder{color:#ccc;}
 /* <---Styling for My Account---> */
 .container-account{
     background: #F5F5F5;
+    max-width: 100%;
 }
 
 
@@ -503,17 +559,22 @@ textarea::-webkit-input-placeholder{color:#ccc;}
     margin-left: 10%;
     margin-right: 10%;
     display: grid;
-    gap: 5rem;
+    gap: 2rem;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-bottom: 10%;
+    margin-bottom: 3%;
+}
+
+@media screen and (max-width: 940px){
+    .account-grid {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .card-content{
    
     text-align: center;
     justify-content: center;
-    
-    
     
 }
 .card-content-b h4{
@@ -607,7 +668,7 @@ textarea::-webkit-input-placeholder{color:#ccc;}
     border: 1px solid rgba(0, 0, 0, 0.5);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-    width: 288px;
+    max-width: 288px;
     
 }
 
@@ -619,47 +680,63 @@ textarea::-webkit-input-placeholder{color:#ccc;}
 /* <---Styling for Ebooks---> */
 .container-ebooks{
     background: white;
+   max-width: 100%;
 }
 
 .banner-card img{
-    width: 100%;
+    min-width: 100%
 }
 .banner-card{
     position: relative;
 }
 .banner-text{
-position: absolute;
-top: 85px;
-color: white;
-padding: 10px;
-text-align: justify;
-font-size: 30px;
-justify-content: center;
-font-weight: bold;
-word-wrap: normal;
-width: 30vw;
-left: 107px;
+    display: none;
 }
+@media only screen and (min-width: 768px){
+    .banner-text{
+        position: absolute;
+        top: 60px;
+        color: white;
+        padding: 3px;
+        text-align: justify;
+        justify-content: center;
+        font-weight: bold;
+        word-wrap: break-word;
+        max-width: 300px;
+        left: 60px;
+        display: flex;
+        }
+}
+
 
 .banner-text p{
     font-size: 32px;
 }
 
 .icons{
-    display: flex;
-    max-width: 100%;
-    justify-content: space-between;
-    margin: auto;
-    margin-bottom: 12px;
-    background: #020202;
-   
-    
+    display: none;
 }
+
+@media only screen and (min-width: 900px){
+    .icons{
+        display: flex;
+        margin: auto 0;
+        justify-content: space-evenly;
+        max-width: 100%;
+        margin-bottom: 12px;
+        background: #020202;
+    }
+} 
+
 
 .icons-img{
     margin-top: 15px;
     margin-left: 50px;
     margin-right: 60px;
+    max-width: 300px;
+   
+    
+    
    
     
 }
@@ -667,23 +744,33 @@ left: 107px;
    font-weight: bold;
    color:blue;
    margin-top: 12px;
-   font-size: 32px;
+   font-size: 25px;
    margin-left: 50px;
    margin-right: 20px;
    margin-bottom: 15px;
+   word-wrap: break-word;
 }
+
 .wrapper-nav{
-    position: relative;
-   margin: 0 auto;
-    padding: 50px 0;
-    clear: both;
-    
+    display: none;
 }
+@media only screen and (min-width: 800px){
+  
+    .wrapper-nav{
+        position: relative;
+       margin: 0 auto;
+        padding: 50px 0;
+        clear: both;
+        display: flex;
+        
+    }
+}
+
 .menu-area{
     list-style: none;
     padding: 0;
     margin: 0;
-    width: 250px;
+    max-width: 250px;
     
     
 }
@@ -693,7 +780,7 @@ left: 107px;
 }
 .menu-area li a {
     text-align: center;
-    height: 36px;
+    min-height: 20px;
     position: relative;
     border-bottom: 1px solid black;
     display: block;
@@ -704,12 +791,16 @@ left: 107px;
 .menu-area li a strong{
     display: block;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 14px;
     
 }
-.menu-area li:hover > a{
-    color: blue;
-}
+
+
+    .menu-area li:hover > a{
+        color: blue;
+    }
+
+
 
 .menu-area li ul,
 .menu-area li ul li ul{
@@ -721,26 +812,31 @@ left: 107px;
     left: 280px;
     list-style: none;
     position: absolute;
-    height: auto;
-    min-width: 250px;
+    max-height: auto;
+    max-width: 250px;
     padding: 0;
     margin: 0;
     top: 0;
 }
-.menu-area li:hover > ul, .menu-area li ul li:hover > ul{
-    display: block;
-    opacity: 1;
-    visibility: visible;
-    left: 250px;
-}
+
+
+    .menu-area li:hover > ul, .menu-area li ul li:hover > ul{
+        display: block;
+        opacity: 1;
+        visibility: visible;
+        left: 250px;
+    }
+
+
+
 .menu-area li ul li a{
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 14px;
     padding: 10px;
     text-align: center;
     border: 2px;
     border-bottom: 1px solid black;
-    height: auto;
+    max-height: auto;
 }
 .menu-area li ul li ul{
     left: 230px;
@@ -750,22 +846,32 @@ left: 107px;
 
 .wrapper-books{
 display: block;
-margin-left:40%;
-margin-right: 60%;
-width: 50%;
-margin-top: -100px;
+margin-left:36%;
+margin-right:30%;
+min-width: 50%;
+margin-top: 30px;
 margin-bottom: 10%;
+padding-right: 20px;
+
+
+
 
 }
 .wrapper-books-img{
     margin-bottom: 20px;
+    display: none;
 }
 
+@media only screen and (min-width: 768px){
+    .wrapper-books-img{
+        display: flex;
+    }
+}
 .wrapper-books-text button{
     border: none;
     background-color: blue;
     color: white;
-    width: 100px;
+    max-width: 100px;
     padding: 1em;
     border-radius: 20px;
     font-weight: bold;
@@ -775,7 +881,7 @@ margin-bottom: 10%;
 
 .wrapper-books-text p{
     word-wrap: normal;
-    width: 30vw;
+    max-width: 30vw;
     margin-bottom: 12px;
     font-size: 20px;
    
@@ -783,183 +889,204 @@ margin-bottom: 10%;
 .wrapper-books-text{
   float: right;
  margin-top: 10px;
-}
 
+}
 .page-numbers{
-    margin-top: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 20px;
-
+    display: none;
 }
+@media only screen and (min-width: 768px){
+    .page-numbers{
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 20px;
+    
+    }
+}
+
 
 
 .container-book{
     display: flex;
     gap: 45px;
+    margin-left: 35%;
+    
 }
 .icons-margin-b{
-margin-left: 10px;
+margin-left: 50px;
 }
 
 .icons-margin-a{
-margin-left: 100px;
+margin-left: 60px;
 }
-
+.icon-container-a{
+ margin-right: 30px;
+}
 .icons-margin-m{
     margin-left: 60px;
 }
 
 .icons-margin-p{
-    margin-left: 75px;
+    margin-left: 70px;
+}
+
+.icon-container-p{
+    margin-right: 40px;
 }
 
 /* <---Styling for E-books Reviews---> */
+.wrapper-review{
+    margin-right: 50px;
+}
 .wrapper-reviews-book{
-display: block;
-margin-left: 38%;
-margin-right: 38%;
-width: 50%;
-margin-bottom: 70%;
-top: -700px;
-}
-
- .wrapper-reviews-book  button {
-    border: none;
-    color: white;
-    width: 200px;
-    padding: 1em;
-    border-radius: 10px;
-    font-weight: bold;
-    font-size: 20px;
-    margin-top: 12px;
-
+    display: block;
+    margin-left: 50%;
+    margin-right: 38%;
+    min-width: 50%;
+    margin-bottom: 750%;
+    top: 200px;
+    }
     
-}
-
-.wrapper-reviews-book h1{
-font-size: 48px;
-margin-bottom: 15px;
-color: blue;
-}
-.wrapper-reviews-book h2{
-    font-size: 32px;
+     .wrapper-reviews-book  button {
+        border: none;
+        color: white;
+        max-width: 200px;
+        padding: 1em;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 12px;
+    
+        
+    }
+    
+    .wrapper-reviews-book h1{
+    font-size: 48px;
     margin-bottom: 15px;
-}
-
-.wrapper-reviews-book .button-1 button{
-    background: #036DE9;
-    border: 1px solid #036DE9;
-    margin-bottom: 5px;
-    
-}
-
-.wrapper-reviews-book .button-2 button{
-    background: #3A3838;
-    border: 1px solid #000000;
-   
-}
-.wrapper-reviews-text p{
-    word-wrap: normal;
-    width: 30vw;
-    margin-bottom: 50px;
-    font-size: 24px;
-    
-    
-   
-}
-.wrapper-reviews-text{
-    width: 100%;
-  border-bottom:1px solid black ;
-}
-
-.stars {
-    color: #C2C609;
-    margin-bottom: 20px;
-    font-size: 2em;
-    margin-top: 12px;
-    margin-bottom: 30px;
-    
-}
-
-.reviews-text p{
-    word-wrap: normal;
-    width: 30vw;
-}
-
-
-.reviews-text{
-    display: block;
-    max-width: 300px;
-    margin: auto;
-}
-.stars-text{
-    display: block;
-    max-width: 300px;
-    margin: auto;
-    color: #C2C609;
-    margin-bottom: 20px;
-    font-size: 2em;
-}
-.container-reviews{
-  float: right;
-    margin-top: -400px;
-}
-
-.ratings h3 {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-size: 24px;
     color: blue;
+    }
+    .wrapper-reviews-book h2{
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
     
-}
-
-
-
-
-.review-b{
- margin-top: -95px;
- margin-bottom: 50px;
- margin-left: 50px;
-  
-}
-
-.review-img{
-    margin-top: 15px;
-}
-.stars-text{
-    margin-top: -25px;
-}
-
-.review-k{
-    margin-top: -95px;
-    margin-left: 50px;
-}
-
-
-.wrapper-reviews-book h2{
-    margin-top: 12px;
-    margin-bottom: 12px;
-}
-.wrapper-review h4{
-    margin-bottom: 40px;
-    font-size: 24px;
-}
-
-.container-ebooks-reviews{
-    background: white;
-}
-
-.wrapper-books-text h3{
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: blue;
-}
-.wrapper-books-text h4{
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-.reviews-text p{
-    font-size: 24px;
-}
+    .wrapper-reviews-book .button-1 button{
+        background: #036DE9;
+        border: 1px solid #036DE9;
+        margin-bottom: 5px;
+        cursor: pointer;
+        
+    }
+    
+    .wrapper-reviews-book .button-2 button{
+        background: #3A3838;
+        border: 1px solid #000000;
+        cursor: pointer;
+       
+    }
+    .wrapper-reviews-text p{
+        word-wrap: normal;
+        width: 30vw;
+        margin-bottom: 50px;
+        font-size: 32px;
+        margin-left: 20px;
+        
+       
+    }
+    .wrapper-reviews-text{
+        width: 100%;
+      border-bottom:1px solid black ;
+    }
+    
+    .stars {
+        color: #C2C609;
+        margin-bottom: 20px;
+        font-size: 2em;
+        margin-top: 12px;
+        margin-bottom: 30px;
+        
+    }
+    
+    .reviews-text p{
+        word-wrap: normal;
+        width: 30vw;
+        font-size: 32px;
+        
+    }
+    
+    
+    .reviews-text{
+        display: block;
+        max-width: 300px;
+        margin: auto;
+    }
+    .stars-text{
+        display: block;
+        max-width: 300px;
+        margin: auto;
+        color: #C2C609;
+        margin-bottom: 20px;
+        font-size: 2em;
+    }
+    .container-reviews{
+      float: right;
+        margin-top: 50px;
+        margin-right: 38px;
+    }
+    
+    .ratings h3 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 24px;
+        color: blue;
+        
+    }
+    
+    .review-b{
+     margin-top: -95px;
+     margin-bottom: 70px;
+     margin-left: 115px;
+    }
+    
+    .review-img{
+        margin-top: 15px;
+    }
+    .stars-text{
+        margin-top: -25px;
+    }
+    
+    .review-k{
+        margin-top: -95px;
+        margin-left: 115px;
+        
+    }
+    
+    
+    .wrapper-reviews-book h2{
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    .wrapper-review h4{
+        margin-bottom: 40px;
+        font-size: 24px;
+    }
+    
+    .container-ebooks-reviews{
+        background: white;
+    }
+    
+    .wrapper-books-text h3{
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: blue;
+    }
+    .wrapper-books-text h4{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .reviews-text p{
+        font-size: 16px;
+        word-wrap: break-word;
+        min-width: 30wv;
+    }
